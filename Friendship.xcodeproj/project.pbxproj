@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		C9B9EFD51F138AF000BEF74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9EFD41F138AF000BEF74B /* AppDelegate.swift */; };
-		C9B9EFD71F138AF000BEF74B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9EFD61F138AF000BEF74B /* MasterViewController.swift */; };
-		C9B9EFD91F138AF000BEF74B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9EFD81F138AF000BEF74B /* DetailViewController.swift */; };
-		C9B9EFDC1F138AF000BEF74B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B9EFDA1F138AF000BEF74B /* Main.storyboard */; };
 		C9B9EFDE1F138AF000BEF74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B9EFDD1F138AF000BEF74B /* Assets.xcassets */; };
 		C9B9EFE11F138AF000BEF74B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B9EFDF1F138AF000BEF74B /* LaunchScreen.storyboard */; };
 		C9B9EFEC1F138AF000BEF74B /* FriendshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9EFEB1F138AF000BEF74B /* FriendshipTests.swift */; };
+		C9B9F0011F1392BE00BEF74B /* TagsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0001F1392BE00BEF74B /* TagsAPI.swift */; };
+		C9B9F0021F1392D600BEF74B /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B9EFFD1F138F2A00BEF74B /* BrightFutures.framework */; };
+		C9B9F0031F1392D900BEF74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B9EFFE1F138F2A00BEF74B /* Result.framework */; };
+		C9B9F0061F1392ED00BEF74B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0051F1392ED00BEF74B /* APIError.swift */; };
+		C9B9F0091F1399DE00BEF74B /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0071F1399DE00BEF74B /* TagsViewController.swift */; };
+		C9B9F00A1F1399DE00BEF74B /* TagsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B9F0081F1399DE00BEF74B /* TagsViewController.xib */; };
+		C9B9F00C1F139A3100BEF74B /* TagsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F00B1F139A3100BEF74B /* TagsDataSource.swift */; };
+		C9B9F00E1F139ABB00BEF74B /* TagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F00D1F139ABB00BEF74B /* TagsViewModel.swift */; };
+		C9B9F0111F139B2100BEF74B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0101F139B2100BEF74B /* State.swift */; };
+		C9B9F0131F139B6500BEF74B /* TagsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0121F139B6500BEF74B /* TagsReducer.swift */; };
+		C9B9F0151F139B7300BEF74B /* TagsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0141F139B7300BEF74B /* TagsAction.swift */; };
+		C9B9F0181F139ED500BEF74B /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0171F139ED500BEF74B /* Routes.swift */; };
+		C9B9F01A1F139F2C00BEF74B /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F0191F139F2C00BEF74B /* RootRoutable.swift */; };
+		C9B9F01C1F139F9A00BEF74B /* TagsRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F01B1F139F9A00BEF74B /* TagsRoutable.swift */; };
+		C9B9F01E1F13A3A500BEF74B /* StateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F01D1F13A3A500BEF74B /* StateReducer.swift */; };
+		C9B9F0201F13A60100BEF74B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9F01F1F13A60100BEF74B /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +42,30 @@
 /* Begin PBXFileReference section */
 		C9B9EFD11F138AF000BEF74B /* Friendship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B9EFD41F138AF000BEF74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9B9EFD61F138AF000BEF74B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		C9B9EFD81F138AF000BEF74B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		C9B9EFDB1F138AF000BEF74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9B9EFDD1F138AF000BEF74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B9EFE01F138AF000BEF74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9B9EFE21F138AF000BEF74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9B9EFE71F138AF000BEF74B /* FriendshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B9EFEB1F138AF000BEF74B /* FriendshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipTests.swift; sourceTree = "<group>"; };
 		C9B9EFED1F138AF000BEF74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B9EFFA1F138C8300BEF74B /* ReSwiftRouter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwiftRouter.framework; path = Carthage/Build/iOS/ReSwiftRouter.framework; sourceTree = "<group>"; };
+		C9B9EFFB1F138C8300BEF74B /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		C9B9EFFD1F138F2A00BEF74B /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		C9B9EFFE1F138F2A00BEF74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C9B9F0001F1392BE00BEF74B /* TagsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsAPI.swift; sourceTree = "<group>"; };
+		C9B9F0051F1392ED00BEF74B /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C9B9F0071F1399DE00BEF74B /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		C9B9F0081F1399DE00BEF74B /* TagsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagsViewController.xib; sourceTree = "<group>"; };
+		C9B9F00B1F139A3100BEF74B /* TagsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsDataSource.swift; sourceTree = "<group>"; };
+		C9B9F00D1F139ABB00BEF74B /* TagsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewModel.swift; sourceTree = "<group>"; };
+		C9B9F0101F139B2100BEF74B /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		C9B9F0121F139B6500BEF74B /* TagsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsReducer.swift; sourceTree = "<group>"; };
+		C9B9F0141F139B7300BEF74B /* TagsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsAction.swift; sourceTree = "<group>"; };
+		C9B9F0171F139ED500BEF74B /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		C9B9F0191F139F2C00BEF74B /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
+		C9B9F01B1F139F9A00BEF74B /* TagsRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsRoutable.swift; sourceTree = "<group>"; };
+		C9B9F01D1F13A3A500BEF74B /* StateReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateReducer.swift; sourceTree = "<group>"; };
+		C9B9F01F1F13A60100BEF74B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B9F0021F1392D600BEF74B /* BrightFutures.framework in Frameworks */,
+				C9B9F0031F1392D900BEF74B /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +94,7 @@
 				C9B9EFD31F138AF000BEF74B /* Friendship */,
 				C9B9EFEA1F138AF000BEF74B /* FriendshipTests */,
 				C9B9EFD21F138AF000BEF74B /* Products */,
+				C9B9EFF91F138C6D00BEF74B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +110,11 @@
 		C9B9EFD31F138AF000BEF74B /* Friendship */ = {
 			isa = PBXGroup;
 			children = (
+				C9B9F0161F139EC200BEF74B /* Routing */,
+				C9B9F00F1F139AF100BEF74B /* Store */,
+				C9B9F0041F1392DE00BEF74B /* API */,
+				C9B9EFFF1F1392A100BEF74B /* Tags */,
 				C9B9EFD41F138AF000BEF74B /* AppDelegate.swift */,
-				C9B9EFD61F138AF000BEF74B /* MasterViewController.swift */,
-				C9B9EFD81F138AF000BEF74B /* DetailViewController.swift */,
-				C9B9EFDA1F138AF000BEF74B /* Main.storyboard */,
 				C9B9EFDD1F138AF000BEF74B /* Assets.xcassets */,
 				C9B9EFDF1F138AF000BEF74B /* LaunchScreen.storyboard */,
 				C9B9EFE21F138AF000BEF74B /* Info.plist */,
@@ -99,6 +131,59 @@
 			path = FriendshipTests;
 			sourceTree = "<group>";
 		};
+		C9B9EFF91F138C6D00BEF74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9B9EFFD1F138F2A00BEF74B /* BrightFutures.framework */,
+				C9B9EFFE1F138F2A00BEF74B /* Result.framework */,
+				C9B9EFFB1F138C8300BEF74B /* ReSwift.framework */,
+				C9B9EFFA1F138C8300BEF74B /* ReSwiftRouter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B9EFFF1F1392A100BEF74B /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				C9B9F01B1F139F9A00BEF74B /* TagsRoutable.swift */,
+				C9B9F0071F1399DE00BEF74B /* TagsViewController.swift */,
+				C9B9F0081F1399DE00BEF74B /* TagsViewController.xib */,
+				C9B9F00B1F139A3100BEF74B /* TagsDataSource.swift */,
+				C9B9F00D1F139ABB00BEF74B /* TagsViewModel.swift */,
+				C9B9F0121F139B6500BEF74B /* TagsReducer.swift */,
+				C9B9F0141F139B7300BEF74B /* TagsAction.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		C9B9F0041F1392DE00BEF74B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C9B9F0001F1392BE00BEF74B /* TagsAPI.swift */,
+				C9B9F0051F1392ED00BEF74B /* APIError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C9B9F00F1F139AF100BEF74B /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				C9B9F0101F139B2100BEF74B /* State.swift */,
+				C9B9F01D1F13A3A500BEF74B /* StateReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		C9B9F0161F139EC200BEF74B /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				C9B9F0171F139ED500BEF74B /* Routes.swift */,
+				C9B9F0191F139F2C00BEF74B /* RootRoutable.swift */,
+				C9B9F01F1F13A60100BEF74B /* AppCoordinator.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +194,7 @@
 				C9B9EFCD1F138AF000BEF74B /* Sources */,
 				C9B9EFCE1F138AF000BEF74B /* Frameworks */,
 				C9B9EFCF1F138AF000BEF74B /* Resources */,
+				C9B9EFFC1F138CAC00BEF74B /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -180,9 +266,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B9F00A1F1399DE00BEF74B /* TagsViewController.xib in Resources */,
 				C9B9EFE11F138AF000BEF74B /* LaunchScreen.storyboard in Resources */,
 				C9B9EFDE1F138AF000BEF74B /* Assets.xcassets in Resources */,
-				C9B9EFDC1F138AF000BEF74B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +281,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C9B9EFFC1F138CAC00BEF74B /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwiftRouter.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwiftRouter.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9B9EFCD1F138AF000BEF74B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B9EFD91F138AF000BEF74B /* DetailViewController.swift in Sources */,
-				C9B9EFD71F138AF000BEF74B /* MasterViewController.swift in Sources */,
+				C9B9F01A1F139F2C00BEF74B /* RootRoutable.swift in Sources */,
+				C9B9F0151F139B7300BEF74B /* TagsAction.swift in Sources */,
 				C9B9EFD51F138AF000BEF74B /* AppDelegate.swift in Sources */,
+				C9B9F00E1F139ABB00BEF74B /* TagsViewModel.swift in Sources */,
+				C9B9F0091F1399DE00BEF74B /* TagsViewController.swift in Sources */,
+				C9B9F0011F1392BE00BEF74B /* TagsAPI.swift in Sources */,
+				C9B9F0201F13A60100BEF74B /* AppCoordinator.swift in Sources */,
+				C9B9F01E1F13A3A500BEF74B /* StateReducer.swift in Sources */,
+				C9B9F01C1F139F9A00BEF74B /* TagsRoutable.swift in Sources */,
+				C9B9F00C1F139A3100BEF74B /* TagsDataSource.swift in Sources */,
+				C9B9F0131F139B6500BEF74B /* TagsReducer.swift in Sources */,
+				C9B9F0181F139ED500BEF74B /* Routes.swift in Sources */,
+				C9B9F0111F139B2100BEF74B /* State.swift in Sources */,
+				C9B9F0061F1392ED00BEF74B /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +347,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C9B9EFDA1F138AF000BEF74B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9B9EFDB1F138AF000BEF74B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9B9EFDF1F138AF000BEF74B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,6 +466,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 74D9UBS5CF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Friendship/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reformedsoftware.Friendship;
@@ -366,6 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 74D9UBS5CF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Friendship/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reformedsoftware.Friendship;
