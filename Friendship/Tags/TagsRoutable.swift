@@ -13,7 +13,7 @@ final class TagsRoutable: Routable {
     var viewController: TagsViewController
 
     init(store: Store<State>) {
-        let viewModel = TagsViewModel()
+        let viewModel = TagsViewModel(store: store)
         viewController = TagsViewController(store: store, viewModel: viewModel)
     }
 
