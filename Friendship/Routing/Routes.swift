@@ -10,4 +10,5 @@ import ReSwiftRouter
 
 enum Routes: RouteElementIdentifier {
     case tags
+    case face
 }

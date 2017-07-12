@@ -11,5 +11,6 @@ import ReSwiftRouter
 
 struct State: StateType {
     var tags: [String] = []
+    var faces: [Face] = []
     var navigationState: NavigationState = NavigationState()
 }

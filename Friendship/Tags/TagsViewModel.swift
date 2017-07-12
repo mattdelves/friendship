@@ -26,4 +26,14 @@ final class TagsViewModel {
             self?.store?.dispatch(action)
         }
     }
+
+    func display(tag: String) {
+        guard let store = store else { return }
+        let route = store.state.navigationState.route + [Routes.face.rawValue]
+        let dataAction = SetRouteSpecificData(route: route, data: tag)
+        let routeAction = SetRouteAction(route)
+
+        store.dispatch(dataAction)
+        store.dispatch(routeAction)
+    }
 }

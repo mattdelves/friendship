@@ -11,17 +11,15 @@ import ReSwift
 import ReSwiftRouter
 
 final class RootRoutable: Routable {
-    var store: Store<State>
+    let store: Store<State>
     weak var window: UIWindow?
+    let navigationController: UINavigationController
 
     init(window: UIWindow?, store: Store<State>) {
         self.window = window
         self.store = store
+        self.navigationController = UINavigationController()
     }
-
-//    func popRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) {
-//        <#code#>
-//    }
 
     func pushRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
         guard let route = Routes(rawValue: routeElementIdentifier) else { fatalError() }
@@ -29,11 +27,14 @@ final class RootRoutable: Routable {
         switch route {
         case .tags:
             let routable = TagsRoutable(store: store)
-            window?.rootViewController = routable.viewController
+            navigationController.pushViewController(routable.viewController, animated: true)
+            window?.rootViewController = navigationController
             window?.makeKeyAndVisible()
             completionHandler()
 
             return routable
+        default:
+            fatalError("Route not supported")
         }
     }
 
@@ -43,11 +44,14 @@ final class RootRoutable: Routable {
         switch route {
         case .tags:
             let routable = TagsRoutable(store: store)
-            window?.rootViewController = routable.viewController
+            navigationController.viewControllers = [routable.viewController]
+            window?.rootViewController = navigationController
             window?.makeKeyAndVisible()
             completionHandler()
 
             return routable
+        default:
+            fatalError("Route not supported")
         }
     }
 }

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C920EDCC1F161C2A00C5FC7D /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920EDCB1F161C2A00C5FC7D /* Face.swift */; };
+		C920EDCE1F161E1100C5FC7D /* TagsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920EDCD1F161E1100C5FC7D /* TagsResponse.swift */; };
+		C920EDD11F16201300C5FC7D /* FacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920EDCF1F16201300C5FC7D /* FacesViewController.swift */; };
+		C920EDD21F16201300C5FC7D /* FacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C920EDD01F16201300C5FC7D /* FacesViewController.xib */; };
+		C920EDD71F16217F00C5FC7D /* FaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920EDD51F16217F00C5FC7D /* FaceCell.swift */; };
+		C920EDD81F16217F00C5FC7D /* FaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C920EDD61F16217F00C5FC7D /* FaceCell.xib */; };
+		C92AE0D71F162330009CAB91 /* FacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AE0D61F162330009CAB91 /* FacesViewModel.swift */; };
+		C92AE0D91F163362009CAB91 /* FacesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AE0D81F163362009CAB91 /* FacesAction.swift */; };
+		C92AE0DB1F163436009CAB91 /* FacesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AE0DA1F163436009CAB91 /* FacesReducer.swift */; };
+		C92AE0DD1F16374D009CAB91 /* FacesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AE0DC1F16374D009CAB91 /* FacesRouter.swift */; };
+		C92AE0DF1F16419E009CAB91 /* FacesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AE0DE1F16419E009CAB91 /* FacesDataStore.swift */; };
 		C9B9EFD51F138AF000BEF74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9EFD41F138AF000BEF74B /* AppDelegate.swift */; };
 		C9B9EFDE1F138AF000BEF74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B9EFDD1F138AF000BEF74B /* Assets.xcassets */; };
 		C9B9EFE11F138AF000BEF74B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B9EFDF1F138AF000BEF74B /* LaunchScreen.storyboard */; };
@@ -40,6 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C920EDCB1F161C2A00C5FC7D /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		C920EDCD1F161E1100C5FC7D /* TagsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsResponse.swift; sourceTree = "<group>"; };
+		C920EDCF1F16201300C5FC7D /* FacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesViewController.swift; sourceTree = "<group>"; };
+		C920EDD01F16201300C5FC7D /* FacesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacesViewController.xib; sourceTree = "<group>"; };
+		C920EDD51F16217F00C5FC7D /* FaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCell.swift; sourceTree = "<group>"; };
+		C920EDD61F16217F00C5FC7D /* FaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceCell.xib; sourceTree = "<group>"; };
+		C92AE0D61F162330009CAB91 /* FacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesViewModel.swift; sourceTree = "<group>"; };
+		C92AE0D81F163362009CAB91 /* FacesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesAction.swift; sourceTree = "<group>"; };
+		C92AE0DA1F163436009CAB91 /* FacesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesReducer.swift; sourceTree = "<group>"; };
+		C92AE0DC1F16374D009CAB91 /* FacesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesRouter.swift; sourceTree = "<group>"; };
+		C92AE0DE1F16419E009CAB91 /* FacesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacesDataStore.swift; sourceTree = "<group>"; };
 		C9B9EFD11F138AF000BEF74B /* Friendship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B9EFD41F138AF000BEF74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B9EFDD1F138AF000BEF74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C920EDCA1F161C0000C5FC7D /* Faces */ = {
+			isa = PBXGroup;
+			children = (
+				C920EDCB1F161C2A00C5FC7D /* Face.swift */,
+				C920EDCF1F16201300C5FC7D /* FacesViewController.swift */,
+				C920EDD01F16201300C5FC7D /* FacesViewController.xib */,
+				C920EDD51F16217F00C5FC7D /* FaceCell.swift */,
+				C920EDD61F16217F00C5FC7D /* FaceCell.xib */,
+				C92AE0D61F162330009CAB91 /* FacesViewModel.swift */,
+				C92AE0D81F163362009CAB91 /* FacesAction.swift */,
+				C92AE0DA1F163436009CAB91 /* FacesReducer.swift */,
+				C92AE0DC1F16374D009CAB91 /* FacesRouter.swift */,
+				C92AE0DE1F16419E009CAB91 /* FacesDataStore.swift */,
+			);
+			path = Faces;
+			sourceTree = "<group>";
+		};
 		C9B9EFC81F138AF000BEF74B = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +149,7 @@
 		C9B9EFD31F138AF000BEF74B /* Friendship */ = {
 			isa = PBXGroup;
 			children = (
+				C920EDCA1F161C0000C5FC7D /* Faces */,
 				C9B9F0161F139EC200BEF74B /* Routing */,
 				C9B9F00F1F139AF100BEF74B /* Store */,
 				C9B9F0041F1392DE00BEF74B /* API */,
@@ -161,6 +201,7 @@
 			children = (
 				C9B9F0001F1392BE00BEF74B /* TagsAPI.swift */,
 				C9B9F0051F1392ED00BEF74B /* APIError.swift */,
+				C920EDCD1F161E1100C5FC7D /* TagsResponse.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -267,7 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B9F00A1F1399DE00BEF74B /* TagsViewController.xib in Resources */,
+				C920EDD21F16201300C5FC7D /* FacesViewController.xib in Resources */,
 				C9B9EFE11F138AF000BEF74B /* LaunchScreen.storyboard in Resources */,
+				C920EDD81F16217F00C5FC7D /* FaceCell.xib in Resources */,
 				C9B9EFDE1F138AF000BEF74B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,18 +354,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92AE0D91F163362009CAB91 /* FacesAction.swift in Sources */,
+				C92AE0D71F162330009CAB91 /* FacesViewModel.swift in Sources */,
 				C9B9F01A1F139F2C00BEF74B /* RootRoutable.swift in Sources */,
 				C9B9F0151F139B7300BEF74B /* TagsAction.swift in Sources */,
 				C9B9EFD51F138AF000BEF74B /* AppDelegate.swift in Sources */,
 				C9B9F00E1F139ABB00BEF74B /* TagsViewModel.swift in Sources */,
 				C9B9F0091F1399DE00BEF74B /* TagsViewController.swift in Sources */,
 				C9B9F0011F1392BE00BEF74B /* TagsAPI.swift in Sources */,
+				C920EDD71F16217F00C5FC7D /* FaceCell.swift in Sources */,
 				C9B9F0201F13A60100BEF74B /* AppCoordinator.swift in Sources */,
+				C920EDCC1F161C2A00C5FC7D /* Face.swift in Sources */,
 				C9B9F01E1F13A3A500BEF74B /* StateReducer.swift in Sources */,
+				C92AE0DF1F16419E009CAB91 /* FacesDataStore.swift in Sources */,
+				C920EDD11F16201300C5FC7D /* FacesViewController.swift in Sources */,
 				C9B9F01C1F139F9A00BEF74B /* TagsRoutable.swift in Sources */,
 				C9B9F00C1F139A3100BEF74B /* TagsDataSource.swift in Sources */,
+				C92AE0DD1F16374D009CAB91 /* FacesRouter.swift in Sources */,
+				C920EDCE1F161E1100C5FC7D /* TagsResponse.swift in Sources */,
 				C9B9F0131F139B6500BEF74B /* TagsReducer.swift in Sources */,
 				C9B9F0181F139ED500BEF74B /* Routes.swift in Sources */,
+				C92AE0DB1F163436009CAB91 /* FacesReducer.swift in Sources */,
 				C9B9F0111F139B2100BEF74B /* State.swift in Sources */,
 				C9B9F0061F1392ED00BEF74B /* APIError.swift in Sources */,
 			);
@@ -548,6 +600,7 @@
 				C9B9EFF21F138AF000BEF74B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9B9EFF31F138AF000BEF74B /* Build configuration list for PBXNativeTarget "FriendshipTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +609,7 @@
 				C9B9EFF51F138AF000BEF74B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

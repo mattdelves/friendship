@@ -63,4 +63,9 @@ extension TagsViewController {
         let tag = dataSource.tags[indexPath.row]
         cell.textLabel?.text = tag
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tag = dataSource.tags[indexPath.row]
+        viewModel.display(tag: tag)
+    }
 }
